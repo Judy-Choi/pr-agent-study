@@ -31,9 +31,7 @@ def generate_sample_report(item_count=5):
     print("--- 샘플 보고서 ---")
     items = []
     for i in range(item_count):
-        # todo: 아이템 이름 생성 로직 다양화
         item_name = f"샘플 아이템 {i+1}"
-        # Todo: 아이템 가격 범위를 좀 더 현실적으로 조정
         item_price = random.randint(1000, 50000)
         items.append(Item(item_name, item_price))
 
